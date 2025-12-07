@@ -1,0 +1,16 @@
+mqtt:
+  sensor:
+    - name: "PM Temperature"
+      state_topic: "home/pylamohan-2025/sensor"
+      unit_of_measurement: "°C"
+      value_template: "{{ value_json.temperature }}"
+
+    - name: "PM Humidity"
+      state_topic: "home/pylamohan-2025/sensor"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.humidity }}"
+
+    - name: "PM Light"
+      state_topic: "home/pylamohan-2025/sensor"
+      unit_of_measurement: "lx"
+      value_template: "{{ value_json.light }}"
